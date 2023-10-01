@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javacolor.controller.ColorController">
+   <children>
+      <Slider id="redSlider" fx:id="sliderRed" layoutX="63.0" layoutY="125.0" prefHeight="14.0" prefWidth="187.0" />
+      <Label layoutX="63.0" layoutY="94.0" text="Red" />
+      <TextField id="redInput" fx:id="textFieldRed" layoutX="263.0" layoutY="120.0" prefHeight="25.0" prefWidth="46.0" />
+      <Slider id="greenSlider" fx:id="sliderGreen" layoutX="63.0" layoutY="206.0" prefHeight="14.0" prefWidth="187.0" />
+      <Label layoutX="63.0" layoutY="175.0" text="Green" />
+      <TextField id="greenInput" fx:id="textFieldGreen" layoutX="263.0" layoutY="201.0" prefHeight="25.0" prefWidth="46.0" />
+      <Slider id="blueSlider" fx:id="sliderBlue" layoutX="63.0" layoutY="289.0" prefHeight="14.0" prefWidth="187.0" />
+      <Label layoutX="63.0" layoutY="258.0" text="Blue" />
+      <TextField id="blueInput" fx:id="textFieldBlue" layoutX="263.0" layoutY="284.0" prefHeight="25.0" prefWidth="46.0" />
+      <Label layoutX="357.0" layoutY="94.0" text="Hex" />
+      <TextField id="hexInput" fx:id="textFieldHex" layoutX="357.0" layoutY="120.0" prefHeight="25.0" prefWidth="198.0" />
+      <Pane layoutX="355.0" layoutY="167.0" prefHeight="98.0" prefWidth="200.0">
+         <children>
+            <Rectangle fx:id="colorRectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="98.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </Pane>
+      <Label fx:id="errorLabel" layoutX="60.0" layoutY="58.0" />
+      <HBox fx:id="colorProposal" layoutX="355.0" layoutY="271.0" prefHeight="52.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
